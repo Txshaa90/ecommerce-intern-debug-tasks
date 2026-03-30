@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 04 - Product Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrapper">
+    <header class="toolbar">
+      <h1>Store Catalog</h1>
+      <input id="searchInput" type="text" placeholder="Search products">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="bags">Bags</option>
+        <option value="shoes">Shoes</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </header>
+
+    <section id="productList" class="product-grid">
+      <article class="product-card" data-category="bags">
+        <h2>Weekend Tote</h2>
+        <p>Durable canvas bag for daily use.</p>
+      </article>
+      <article class="product-card" data-category="shoes">
+        <h2>Street Runner</h2>
+        <p>Comfortable sneakers for long walks.</p>
+      </article>
+      <article class="product-card" data-category="accessories">
+        <h2>Leather Wallet</h2>
+        <p>Compact wallet with card slots.</p>
+      </article>
+      <article class="product-card" data-category="bags">
+        <h2>Travel Backpack</h2>
+        <p>Water-resistant bag with laptop sleeve.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

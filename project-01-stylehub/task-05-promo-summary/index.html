@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 05 - Promo Summary</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="summary-card">
+      <h1>Order Summary</h1>
+      <p>Wireless Earbuds</p>
+      <p>Base price: <span id="basePrice">$120.00</span></p>
+
+      <div class="promo-row">
+        <input id="promoCode" type="text" placeholder="Enter promo code">
+        <button id="applyPromo">Apply</button>
+      </div>
+
+      <p class="discount-line">Discount: <span id="discount">$0.00</span></p>
+      <p class="total-line">Final Total: <strong id="finalTotal">$120.00</strong></p>
+      <p id="promoMessage" class="promo-message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

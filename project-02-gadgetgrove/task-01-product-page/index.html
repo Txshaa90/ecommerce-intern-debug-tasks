@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 01 - Headphone Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <h1>GadgetGrove</h1>
+      <button id="menuToggle" class="menu-button">Menu</button>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#product">Product</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#buy">Buy Now</a>
+    </div>
+  </header>
+
+  <main class="product-layout">
+    <section class="gallery">
+      <img id="mainImage" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Running shoes">
+      <div class="thumbs">
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80">Red</button>
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">Blue</button>
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80">White</button>
+      </div>
+    </section>
+
+    <section class="details" id="product">
+      <p class="eyebrow">Audio Launch</p>
+      <h2>PulseBeat Headphones</h2>
+      <p class="price">$149.00</p>
+      <p class="description">
+        Wireless over-ear headphones designed for long battery life and clear everyday listening.
+      </p>
+
+      <label for="size">Choose a color</label>
+      <select id="size">
+        <option value="">Select color</option>
+        <option value="black">Black</option>
+        <option value="silver">Silver</option>
+        <option value="sand">Sand</option>
+      </select>
+
+      <button id="addToCart" class="primary-button">Add to Cart</button>
+      <p id="cartMessage" class="cart-message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

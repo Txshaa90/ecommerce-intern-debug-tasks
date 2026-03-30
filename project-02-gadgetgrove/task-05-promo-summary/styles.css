@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #f9f3ec, #eff5ff);
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.summary-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.promo-row {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.promo-row input,
+.promo-row button {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.promo-row input {
+  border: 1px solid #cfc8bd;
+}
+
+.promo-row button {
+  border: none;
+  background: #1f5eff;
+  color: white;
+  cursor: pointer;
+}
+
+.discount-line,
+.total-line,
+.promo-message {
+  font-size: 1.05rem;
+}
+
+.promo-message {
+  min-height: 24px;
+  color: #1f5eff;
+}

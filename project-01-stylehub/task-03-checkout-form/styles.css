@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f7f9;
+  color: #1d2630;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 540px;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(24, 33, 45, 0.08);
+  display: grid;
+  gap: 10px;
+}
+
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c8d3db;
+  border-radius: 10px;
+}
+
+.form-card button {
+  margin-top: 8px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #0d6b55;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.message {
+  min-height: 24px;
+  color: #0d6b55;
+}

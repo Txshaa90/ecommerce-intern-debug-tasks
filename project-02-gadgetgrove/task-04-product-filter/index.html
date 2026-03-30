@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 04 - Electronics Filter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrapper">
+    <header class="toolbar">
+      <h1>Electronics Catalog</h1>
+      <input id="searchInput" type="text" placeholder="Search products">
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="audio">Audio</option>
+        <option value="computing">Computing</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </header>
+
+    <section id="productList" class="product-grid">
+      <article class="product-card" data-category="audio">
+        <h2>Studio Headphones</h2>
+        <p>Closed-back headphones for focused listening.</p>
+      </article>
+      <article class="product-card" data-category="computing">
+        <h2>Compact Keyboard</h2>
+        <p>Wireless keyboard with a slim layout.</p>
+      </article>
+      <article class="product-card" data-category="accessories">
+        <h2>USB-C Dock</h2>
+        <p>Multi-port dock for laptops and tablets.</p>
+      </article>
+      <article class="product-card" data-category="audio">
+        <h2>Bluetooth Speaker</h2>
+        <p>Portable speaker with strong bass response.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

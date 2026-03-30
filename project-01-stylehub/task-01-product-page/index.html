@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 01 - Product Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <h1>NovaCart</h1>
+      <button id="menuToggle" class="menu-button">Menu</button>
+    </nav>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#product">Product</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#buy">Buy Now</a>
+    </div>
+  </header>
+
+  <main class="product-layout">
+    <section class="gallery">
+      <img id="mainImage" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Running shoes">
+      <div class="thumbs">
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80">Red</button>
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">Blue</button>
+        <button class="thumb" data-image="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80">White</button>
+      </div>
+    </section>
+
+    <section class="details" id="product">
+      <p class="eyebrow">Sneaker Drop</p>
+      <h2>Velocity Runner</h2>
+      <p class="price">$89.00</p>
+      <p class="description">
+        Lightweight training shoes designed for daily city runs and all-day comfort.
+      </p>
+
+      <label for="size">Choose a size</label>
+      <select id="size">
+        <option value="">Select size</option>
+        <option value="7">US 7</option>
+        <option value="8">US 8</option>
+        <option value="9">US 9</option>
+      </select>
+
+      <button id="addToCart" class="primary-button">Add to Cart</button>
+      <p id="cartMessage" class="cart-message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
