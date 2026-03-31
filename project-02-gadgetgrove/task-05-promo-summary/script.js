@@ -16,11 +16,11 @@ applyPromoButton.addEventListener("click", function () {
     discount = 15;
     promoMessage.textContent = "Shipping removed.";
   } else {
-    discount = 20;
+    discount = 0; // discount was adding 20, should add 0
     promoMessage.textContent = "Invalid promo code.";
   }
 
-  const finalTotal = basePrice + discount;
+  const finalTotal = basePrice - discount; // discount was added, not subtracted
   discountLabel.textContent = `$${discount.toFixed(2)}`;
   finalTotalLabel.textContent = `$${finalTotal.toFixed(2)}`;
 });
