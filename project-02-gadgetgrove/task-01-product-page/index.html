@@ -21,11 +21,12 @@
 
   <main class="product-layout">
     <section class="gallery">
-      <img id="mainImage" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80" alt="Running shoes">
+      <!-- Could not access images.unsplash.com to find the images, so I used local images (refer to /assets folder) -->
+      <img id="mainImage" src="assets/red-pulsebeat-headphones.jpg" alt="Red PulseBeat Headphones">
       <div class="thumbs">
-        <button class="thumb" data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80">Red</button>
-        <button class="thumb" data-image="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=900&q=80">Blue</button>
-        <button class="thumb" data-image="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80">White</button>
+        <button class="thumb" data-image="assets/red-pulsebeat-headphones.jpg">Red</button>
+        <button class="thumb" data-image="assets/blue-pulsebeat-headphones.jpg">Blue</button>
+        <button class="thumb" data-image="assets/white-pulsebeat-headphones.jpg">White</button>
       </div>
     </section>
 
@@ -40,9 +41,10 @@
       <label for="size">Choose a color</label>
       <select id="size">
         <option value="">Select color</option>
-        <option value="black">Black</option>
-        <option value="silver">Silver</option>
-        <option value="sand">Sand</option>
+        <!-- Fixed the color options to the matching -->
+        <option value="black">Red</option>
+        <option value="silver">Blue</option>
+        <option value="sand">White</option>
       </select>
 
       <button id="addToCart" class="primary-button">Add to Cart</button>
