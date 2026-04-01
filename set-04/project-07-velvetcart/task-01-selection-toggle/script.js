@@ -1,1 +1,11 @@
-const buttons=document.querySelectorAll(".sizes button");const label=document.getElementById("selectedLabel");buttons.forEach((button)=>{button.addEventListener("click",()=>{buttons.forEach((item)=>item.classList.remove("active"));button.classList.add("selected");label.textContent="Selected: "+button.dataset.size;});});
+const buttons = document.querySelectorAll(".sizes button");
+const label = document.getElementById("selectedLabel");
+buttons.forEach((button) => {
+  button.addEventListener("click",() => {
+    buttons.forEach((item)=>item.classList.remove("active"));
+    button.classList.add("selected");
+    label.textContent = "Selected: "+button.dataset.size;
+  }
+  );
+}
+);

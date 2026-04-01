@@ -1,1 +1,9 @@
-const mainImage=document.getElementById("mainImage");const thumbs=document.querySelectorAll(".thumbnail");thumbs.forEach((thumb)=>{thumb.addEventListener("click",()=>{mainImage.src=thumb.dataset.img;});});
+const mainImage = document.getElementById("mainImage");
+const thumbs = document.querySelectorAll(".thumbnail");
+thumbs.forEach((thumb) => {
+  thumb.addEventListener("click",() => {
+    mainImage.src = thumb.dataset.img;
+  }
+  );
+}
+);
