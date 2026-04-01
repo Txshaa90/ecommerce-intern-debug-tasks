@@ -23,6 +23,11 @@ checkoutForm.addEventListener("submit", function (event) {
     return;
   }
 
+  // Simulate order placement (impractical, but for demonstration)
+  setTimeout(() => {
+    message.textContent = "Submitting order...";
+  }, 2000);
+  
   message.textContent = "Order placed successfully!";
-  message.textContent = "Submitting order...";  
+    
 });
