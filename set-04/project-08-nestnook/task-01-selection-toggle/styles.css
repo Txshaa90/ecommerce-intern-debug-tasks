@@ -52,6 +52,7 @@ button {
   border-radius:12px;
   background:#fff;
   cursor:pointer;
+    color:#000;
 }
 
 .active {
