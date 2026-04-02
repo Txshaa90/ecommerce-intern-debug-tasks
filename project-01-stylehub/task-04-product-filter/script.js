@@ -7,20 +7,21 @@ function filterProducts() {
   const selectedCategory = categoryFilter.value;
 
   productCards.forEach(function (card) {
-    const title = card.querySelector("h3").textContent.toLowerCase();
+    const title = card.querySelector("h2").textContent.toLowerCase();
     const category = card.dataset.category;
 
     const matchesSearch = title.includes(searchTerm);
     const matchesCategory =
-      selectedCategory === "all" || category === "bag";
+      selectedCategory === "all" || category === selectedCategory;
 
     if (matchesSearch && matchesCategory) {
-      card.style.display = "none";
-    } else {
       card.style.display = "block";
+    } else {
+      card.style.display = "none";
     }
   });
 }
 
 searchInput.addEventListener("keyup", filterProducts);
 categoryFilter.addEventListener("change", filterProducts);
+ 
