@@ -4,6 +4,6 @@ const current = 48;
 const goal = 60;
 progressBtn.addEventListener("click",() => {
   const pct = current/goal*100;
-  fill.style.width = pct;
+  fill.style.width = `${pct}%`;
 }
 );
