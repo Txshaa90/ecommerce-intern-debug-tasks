@@ -1,4 +1,4 @@
-const menuToggle = document.getElementById("menu-toggle");
+const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
 const mainImage = document.getElementById("mainImage");
 const thumbs = document.querySelectorAll(".thumb");
@@ -12,15 +12,18 @@ menuToggle.addEventListener("click", function () {
 
 thumbs.forEach(function (thumb) {
   thumb.addEventListener("click", function () {
-    mainImage.src = thumb.dataset.img;
+    mainImage.src = thumb.dataset.image;
+
+    thumbs.forEach(t => t.classList.remove("active"));
+    thumb.classList.add("active");
   });
 });
 
 addToCartButton.addEventListener("click", function () {
   if (sizeSelect.value === "") {
-    cartMessage.textContent = "Added headphones to cart!";
+    cartMessage.textContent = "Please select a size first.";
     return;
   }
 
-  cartMessage.textContent = "Please select a size first.";
+  cartMessage.textContent = "Added headphones to cart!";
 });
