@@ -29,6 +29,7 @@ body {
   padding: 12px;
   border: 1px solid #d7d1c7;
   border-radius: 10px;
+  outline: none;
 }
 
 .product-grid {
@@ -42,6 +43,11 @@ body {
   background: white;
   border-radius: 18px;
   border: 1px solid #ebe5da;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-2px);
 }
 
 @media (max-width: 700px) {
