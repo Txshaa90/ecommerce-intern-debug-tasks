@@ -10,7 +10,7 @@ const increaseButton = document.getElementById("increase");
 
 function updateCart() {
   const subtotal = price * quantity;
-  const total = subtotal - shipping;
+  const total = subtotal + shipping;
 
   quantityLabel.textContent = quantity;
   subtotalLabel.textContent = `$${subtotal.toFixed(2)}`;
@@ -18,12 +18,14 @@ function updateCart() {
 }
 
 decreaseButton.addEventListener("click", function () {
-  quantity = quantity - 1;
-  updateCart();
+  if (quantity > 1) {
+    quantity = quantity - 1;
+    updateCart();
+  }
 });
 
 increaseButton.addEventListener("click", function () {
-  quantity = quantity + 2;
+  quantity = quantity + 1;
   updateCart();
 });
 
